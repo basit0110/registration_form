@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <title>CA-304</title>
+  <style type="text/css">
+
+    {
+      margin:0;
+      padding:0;
+    }
+
+    .Registration Form
+    {
+      width:800px;
+      background-color:rgb(0,0,0,0,6);
+      margin:auto;
+      color:#FFFFFF;
+      padding:10px 0px 10px 0px;
+      text-align:center;
+      border-radius:15px 15px 0px 0px;
+    }
+
+    .code
+    {
+      position:relative;
+      left:0px;
+      top:0px;
+      line-height:20px;
+      width:25px;
+      border-radius:0px;
+      padding:0 22px;
+      font-size:12px;
+      color:#555;
+         }
+ .radio{
+        display:inline-block;
+        padding-right:70px;
+        front-size:25px;
+        margin-left:25px;
+        margin-top:15px;
+        color:white;
+        }
+        
+ .radio input{
+              width:20px;
+              height:20px;
+              border-radius:50%;
+              cursor:pointer;
+              outline:none;
+              }
+  .button{
+         background-color:#3BAF9F;
+         display:block;
+         margin:20px 0px 0px 20px;
+         text-align:center;
+         border-radius:12px;
+         border:2px solid #366473;
+         padding:14px 110px;
+         color:white;
+         cursor:pointer;
+         transition:0.25px;
+         }
+ button:hover{
+              background-color:#5390F5;
+              } 
+h1 {
+  text-align: center;
+}
+
+{
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 110px;
+        color:  #000000;
+      }
+      input {
+        padding: 5px 10px;
+      }
+  </style>
+</head>
+
+<body>
+
+<div class="regform"><h1>Registration Form</h1></div>
+
+  <label for="name"><b>Name</b></label>
+  <input type="text" placeholder="First name" name="Fname" id="Fname" required>
+  <input type="text" placeholder="Last name" name="Lname" id="Lname" required>
+  <p></p> 
+
+
+<br>
+  <label for="Course"><b>Course</b></label>
+  <input type="text" placeholder="Course name" required>
+  <p></p>
+</br>
+
+
+  <label for="Email"><b>Email</b></label>
+  <input type="text" placeholder="Please enter your Email" required> 
+  <p></p> 
+
+
+<br>  
+   <label for="Phone"><b>Phone</b></label>
+   <input class="code" type="text" placeholder="+91" name="area code">
+   <input class="number" type="text" placeholder="Enter valid phone number" name="phone">
+   <p></p>
+</br>
+   
+   <label for="subject"><b>Subject</b></label>
+   <select id="subject" name="subject">
+      <option value="Select One" placeholder="Select One" required >Select One</option>
+      <option value="Image Processing">Image Processing</option>
+      <option value="Algorithm Analysis and Design">Algorithm Analysis and Design</option>
+      <option value="Optimization Theory">Optimization Theory</option>
+      <p></p>
+   </select>
+   
+
+  <p><label for="yes_no_radio"><b>Are you Hostler?</b></label>
+  <input type="radio" name="yes_no" checked>Yes</input>
+  <input type="radio" name="yes_no">No</input></p>
+
+
+  <h1><div class="form_container">
+  <form id="myform" onsubmit="return handle_form_submission()">
+  <button type='submit'>Submit</button>
+  </form>
+  </div></h1>
+
+</form>
+</div>
+  
+<script type="text/javascript">
+    onload=function(){setTimeout(function(){document.body.style.backgroundColor="#"+Math.round(Math.random()*16777215).toString(16);},5000);};
+
+    function handle_form_submission()
+    {
+      alert('You have successfully registered for your course');
+      return false; //do not submit the form
+    }
+
+</script>
+<body>
+</html>
